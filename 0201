@@ -1,0 +1,15 @@
+Aim: Bits o' pixels
+
+How to rep color w/ following amount of space (color depth):
+1 bit: white/black, on/off
+2 bits: first bit for color, second for intensity
+3 bits:	rgb, on or off
+4 bits: rgb, intensity
+6 bits: rgb, each color has its own intensity
+
+Image files: Uncompressed, Compressed, Lossless (direct rep of original src), Lossy (not direct rep of original src)
+      -gif(c,l)
+      -png(c,l)
+      -jpg(c,ly)
+      -bmp(u,l)
+      -tif(u,l)
