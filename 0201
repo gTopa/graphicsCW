@@ -7,9 +7,22 @@ How to rep color w/ following amount of space (color depth):
 4 bits: rgb, intensity
 6 bits: rgb, each color has its own intensity
 
-Image files: Uncompressed, Compressed, Lossless (direct rep of original src), Lossy (not direct rep of original src)
+Image files: Uncompressed (piece of data for each pixle), Compressed, Lossless (direct rep of original src), Lossy (not direct rep of original src)
       -gif(c,l)
-      -png(c,l)
+      -png(c,l) -> run length encoding (lossless compression algo) -> doesnt work well if lots of dif colors
       -jpg(c,ly)
       -bmp(u,l)
-      -tif(u,l)
+      -tiff(u,l)
+
+rle: gggrpppp -> 3g1r4p
+     ffoooooo 	 2f6o
+
+vector(sug, pdf) drawing instructions, scalable -> line 01 10 50, fcricle 20 20 5, char q 10 100 25
+
+Net PBM (u,l)
+-ppm
+-all whitespace is the same
+-format:
+   Header -> P3
+       	     XRES, YRES, MAX COLOR
+   Pixel Data -> R G B R G B...
