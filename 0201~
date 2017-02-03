@@ -1,6 +1,0 @@
-How to rep color w/ following amount of space:
-1 bit: white/black
-2 bits: shades of grey
-3 bits:	rgb, on or off
-4 bits: rgb, opacity
-6 bits: like 3, more options

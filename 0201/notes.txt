@@ -26,3 +26,6 @@ Net PBM (u,l)
    Header -> P3
        	     XRES, YRES, MAX COLOR
    Pixel Data -> R G B R G B...
+
+display -> displays image file
+convert -> convert image.ppm image.png, changes file size
