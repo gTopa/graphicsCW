@@ -1,0 +1,13 @@
+
+
+Invalid pixle -> bad value, provide pixle data past end of image
+point corresponds to middle of pixle
+
+Bresenham's Line Algorithm:
+
+Assume: 0<m<1 
+1. Ax+By+C=0, A=delta y, B=-(delta x), C=(delta x)*b
+2. f(x,y)=Ax+By+C
+3. if f(x,y)=0, x,y on line
+   if f(x,y)<0, x,y above line
+   if f(x,y)>0, x,y below line
