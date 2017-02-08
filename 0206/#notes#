@@ -19,8 +19,7 @@ f(midpt):
 
 (x0,y0) -> (x1,y1)
 x=x0, y=y0
-d=2A+B
-while x<=x1
+d=2A+Bwhile x<=x1
    plot(x,y)
    if d>0
       y++
