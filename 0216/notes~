@@ -1,0 +1,13 @@
+Transformations:
+
+Only have to modify pixels we use in drawline
+
+Edge list -> structure that store points that make up lines, every two points make a line -> e.g. [p1,p2,p3,p4,p5...]
+
+Triangle ABC: [A,B,B,C,C,A]
+
+Apply transformation by modifying each point on edge list
+
+Storing and representing edge lists:
+   Each point will have x, y, z components
+   Each component should be a floating point #

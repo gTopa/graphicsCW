@@ -1,0 +1,31 @@
+Transformations:
+
+Only have to modify pixels we use in drawline
+
+Edge list -> structure that store points that make up lines, every two points make a line -> e.g. [p1,p2,p3,p4,p5...]
+
+Triangle ABC: [A,B,B,C,C,A]
+
+Apply transformation by modifying each point on edge list
+
+Storing and representing edge lists:
+   Each point will have x, y, z components
+   Each component should be a floating point #
+   [x0,x1,x2,x3...xn
+    y0,y1,y2,y3...yn
+    z0,z1,z2,z3...zn
+    1.0,1.0,1.0,1.0,...1.0]
+
+Matrix Math:
+  -Scalar Multiplication
+  -Matrix Multiplication
+  -Multiplicative Identity
+
+Scalar Mult:
+s* [a,b  = [sa,sb
+    c,d]    sc,sd]
+
+Matrix Mult (restriction: (M)(N) -> num of columns in M must equal num of rows in N)
+(AxB)(BxC)=(AxC)
+
+(4x4)(4xN)=(4xN)
