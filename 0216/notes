@@ -29,3 +29,20 @@ Matrix Mult (restriction: (M)(N) -> num of columns in M must equal num of rows i
 (AxB)(BxC)=(AxC)
 
 (4x4)(4xN)=(4xN)
+
+
+0  A B C     0  G H     0  (AG+BI+CK) (AH+BJ+CL)
+1  D E F  *  1  I J  =  1  (DG+EI+FK) (DH+EJ+FL)
+             2  K L
+   0 1 2                        0          1
+                0 1
+
+Multiplicative Identity Matrix:
+IxM=M
+   -Diagonal values are 1, all other values are 0, always a square
+
+ 1 0 0 0
+ 0 1 0 0
+ 0 0 1 0
+ 0 0 0 1
+ 
