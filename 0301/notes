@@ -1,0 +1,35 @@
+Transformation Matrices
+
+Translation:
+(x,y,z) -> T(a,b,c) -> (x+a,y+b,z+c)
+
+x [ 1 0 0 a      [ x      [ x+a
+y   0 1 0 b   *    y   =    y+b
+z   0 0 1 c        z   	    z+c
+    0 0 0 1 ]      1 ]	     1  ]
+
+Scaling:
+(x,y,z) -> S(a,b,c) -> (xa,yb,zc)
+
+[ a 0 0 0     [ x     [ ax
+  0 b 0 0   *   y   = 	by
+  0 0 c 0   	z   	cz
+  0 0 0 1 ]	1 ]	1  ]
+
+Rotation:
+(x,y,z) -> R(theta, z) -> (x*cos(theta)-y*sin(theta),y*cos(theta)+x*sin(theta),z)
+
+x=r*cos(phi) y=r*sin(phi)
+
+x1 = r*cos(theta+phi)
+x1 = r*cos(phi)*cos(theta)-r*sin(phi)sin(theta)]
+x1 = x*cos(theta)-y*sin(theta)
+
+y1 = r*sin(phi+theta)
+y1 = r*sin(phi)*cos(theta)+r*cos(phi)*sin(theta)
+y1 = y*cos(theta)+x*sin(theta)
+
+[ cos(theta) -sin(theta) 0 0
+  cos(theta) sin(theta)  0 0
+       0         0       1 0
+       0	 0	 0 1 ]
