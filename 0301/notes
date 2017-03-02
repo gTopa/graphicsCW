@@ -18,6 +18,8 @@ Scaling:
 
 Rotation:
 (x,y,z) -> R(theta, z) -> (x*cos(theta)-y*sin(theta),y*cos(theta)+x*sin(theta),z)
+(x,y,z) -> R(theta, x) -> (x,y*cos(theta)-z*sin(theta),z*cos(theta)+y*sin(theta))
+(x,y,z) -> R(theta, y) -> (x*cos(theta)+z*sin(theta),y,z*cos(theta)-x*sin(theta))
 
 x=r*cos(phi) y=r*sin(phi)
 
@@ -29,7 +31,16 @@ y1 = r*sin(phi+theta)
 y1 = r*sin(phi)*cos(theta)+r*cos(phi)*sin(theta)
 y1 = y*cos(theta)+x*sin(theta)
 
+z axis rotation:
 [ cos(theta) -sin(theta) 0 0
   cos(theta) sin(theta)  0 0
        0         0       1 0
        0	 0	 0 1 ]
+
+Combining Transformations:
+E0,r,t,s
+r*E0=E1
+t*E1=E2
+s*E2=E3
+
+E3=(s*t*r)*E0
