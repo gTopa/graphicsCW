@@ -1,0 +1,10 @@
+Parametric Equations
+
+Describe curves with respect to a seperate independent variable(t)
+    x=f(t)  | x=x0+(delta x)*t
+    y=g(t)  | y=y0+(delta y)*t   t: 0->1
+
+circle:
+   x=r*cos(2(pi)*t)+cx
+   y=r*sin(2(pi)*t)+cy
+
