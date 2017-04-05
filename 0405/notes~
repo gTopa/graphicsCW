@@ -1,0 +1,10 @@
+Hidden Surface Removal
+
+Backface Culling -> ignore backward facing polygons
+
+V -> view vector, vector from surface of polygon to viewer
+N -> surface normal, vector perpendicular to plane of polygon
+
+1. Calculate surface normal
+2. Find theta bt. surface normal and view vector
+3. 

@@ -1,0 +1,15 @@
+Rectangular Prism
+
+   Given: One vertex (top left front), height, width, depth
+   Defining points: vertices
+
+   x   x+w
+   y   y-h
+   z   z-d
+
+Sphere
+
+   Given: center, radius
+   Defining points: points on the surface of the sphere
+
+   make circle, rotate it around x or y axis

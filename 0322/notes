@@ -1,0 +1,33 @@
+Rectangular Prism
+
+   Given: One vertex (top left front), height, width, depth
+   Defining points: vertices
+   Generate:
+      x   x+w
+      y   y-h
+      z   z-d
+
+Sphere
+
+   Given: center, radius
+   Defining points: points on the surface of the sphere
+   Generate: make circle, rotate it around x or y axis
+
+   x=rcos(theta) + cx
+   y=rsin(theta)cos(phi) + cy
+   z=rsin(theta)sin(phi) + cz
+   theta: 0 -> pi
+   phi: 0 -> 2*pi
+   
+Torus
+
+   Given: center, circle radius, torus radius
+   Defining Points: points on surface of torus
+   Generate: make circle torus radius away from center, rotate around center of torus
+
+   x= cos(phi)(rcos(theta)+R) + cx
+   y= rsin(theta) + cy
+   z= -sin(phi)(rcos(theta)+R) + cz
+   theta: 0 -> 2*pi
+   phi: 0 -> 2*pi
+   
