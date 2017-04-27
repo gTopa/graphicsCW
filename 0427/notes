@@ -1,0 +1,51 @@
+Animation:
+
+r:0-360,5
+push
+move
+250 250 0
+rotate
+y r
+sphere
+0 0 0 100
+save
+(r/5).png
+
+Compiler: source code -> compiler -> machine code
+   -generally made up of 5 dif processes:
+      1. lexer
+      2. parser
+      3. semantic analyzer
+      4. optimizer
+      5. code generator
+
+Lexer:
+   -Performs lexical analysis
+   -Knows all valid tokens
+   -Input: source code
+   -Output: token list
+
+   code:
+   int main(){
+      long x=5+6;
+      //woohoo
+      printf("%d",x);
+      return 8;
+   }
+
+   token list:
+   int -> K
+   main -> I
+   ( -> S
+   ) -> S
+   { -> S
+   long -> K
+   x -> I
+   = -> S
+   5 -> V
+   + -> K
+   6 -> V
+   ; -> S    *no woohoo
+   print ->I
+   ...
+

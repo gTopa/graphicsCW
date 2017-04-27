@@ -1,0 +1,6 @@
+Relative Coordinate System
+   -Each object can have its own coord system defined by a transformation matrix
+   -Each time we draw an object we immediately apply the current coord system
+   -Allows us to explicitely define which objects are connected
+
+   Data structure to make it happen: Tree, Stack
