@@ -33,7 +33,7 @@ Lexer:
       return 8;
    }
 
-   token list:
+   token list (data file):
    int -> K
    main -> I
    ( -> S
@@ -49,3 +49,37 @@ Lexer:
    print ->I
    ...
 
+Parser:
+   -Knows the grammar of the language
+   -Syntax analysis
+   -Input: token list
+   -Output: syntax tree
+
+   syntax tree:
+      int
+       |
+      main-return-8
+     /    \
+    =	printf
+   / \	  /   \
+long  + "%d"   x
+  |  /\
+  x 5  6
+
+Semantic Analyzer:
+   -Knows how to map tokens from syntax tree to operations, identifiers and values
+   -Input: syntax tree
+   -Output: operation list, symbol table (list of identifiers)
+
+   operation list:    	    	   	 symbol table:
+   +:5,6	     			 main:int
+   =:x,prev Op				 x:long
+   printf    				 printf:void, ...
+   return:8
+
+Code Generator:
+   -Input: operation list, symbol table
+   -Output: machine code
+
+
+To write lexer need lexicon, to write parser, need structure
